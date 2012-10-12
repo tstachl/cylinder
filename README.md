@@ -1,26 +1,46 @@
-# [CoffeesScript jQuery Plugin Boilerplate](http://miniboilerplate.com) [![Build Status](https://secure.travis-ci.org/miniJs/miniBoilerplate.png?branch=master)](http://travis-ci.org/miniJs/miniBoilerplate)
+# Cylinder [![Build Status](https://secure.travis-ci.org/tstachl/cylinder.png?branch=master)](http://travis-ci.org/tstachl/cylinder)
 
-jQuery Plugin Boilerplate written in CoffeeScript to help you create plugins in a clean and quick way.
+Cylinder is a very simple jQuery plugin that generates a cylinder graphic. This graphic is built using SVG and is therefor dynamically changeable. Apart from setting the current value you can also set the empty and fluid colors.
 
 ## Version
 
-v1.1 Stable
+v0.1.0
 
 ## Website Url
 
-http://minijs.github.com/miniBoilerplate/
+https://github.com/tstachl/cylinder
 
 ## Bug tracker
 
-If you find a bug, please raise it the [issue here](https://github.com/miniJs/miniBoilerplate/issues) on Github! 
+If you find a bug, please raise it the [issue here](https://github.com/tstachl/cylinder/issues) on Github! 
 
 ## Documenation
 
-[miniboilerplate.com](http://miniboilerplate.com/)
+- Basic usage
+
+```javascript
+$('#element').cylinder({
+  colors: {
+    container: {
+      fill: '#e5e5e5',
+      stroke: '#dcdada'
+    },
+    fluid: {
+      fill: '#0051A6',
+      stroke: '#003974'
+    },
+    // Accent is the color on the top of the fluid
+    accent: {
+      fill: '#5d98d7',
+      stroke: '#4483c4'
+    }
+  },
+  value: .3
+});
+```
 
 ## Developer
 
-Developed by Matthieu Aussaguel, [mynameismatthieu.com](http://mynameismatthieu.com)
+Developed by Thomas Stachl, http://stachl.me/
 
-+ [@mattaussaguel](http://twitter.com/mattaussaguel)
-+ [Github Profile](http://github.com/matthieua)
++ [Github Profile](http://github.com/tstachl)
